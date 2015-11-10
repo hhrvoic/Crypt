@@ -1,0 +1,4 @@
+use_frameworks!
+pod 'Heimdall','~> 0.2.1'
+pod 'CryptoSwift', :git => "https://github.com/krzyzanowskim/CryptoSwift", :branch => "master"
+

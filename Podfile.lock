@@ -1,0 +1,23 @@
+PODS:
+  - CryptoSwift (0.1.1)
+  - Heimdall (0.2.5)
+
+DEPENDENCIES:
+  - CryptoSwift (from `https://github.com/krzyzanowskim/CryptoSwift`, branch `master`)
+  - Heimdall (~> 0.2.1)
+
+EXTERNAL SOURCES:
+  CryptoSwift:
+    :branch: master
+    :git: https://github.com/krzyzanowskim/CryptoSwift
+
+CHECKOUT OPTIONS:
+  CryptoSwift:
+    :commit: f23720f6b398169d7407ca8b2c4a590238128686
+    :git: https://github.com/krzyzanowskim/CryptoSwift
+
+SPEC CHECKSUMS:
+  CryptoSwift: 80b014431f6ef249acb6004efc93a8f65f5f7781
+  Heimdall: e388795a9bb50c8403e27cbc48093b9b0380c879
+
+COCOAPODS: 0.39.0

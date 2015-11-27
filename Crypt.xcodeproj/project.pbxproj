@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		52AB8A3B1BF0911300172F34 /* AES.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AB8A3A1BF0911300172F34 /* AES.swift */; };
+		529842E61C0861050076E97B /* ViewControllerKriptTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529842E51C0861050076E97B /* ViewControllerKriptTab.swift */; };
+		52AB8A3B1BF0911300172F34 /* AESCrypt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AB8A3A1BF0911300172F34 /* AESCrypt.swift */; };
 		52AB8A3D1BF0912600172F34 /* RSASign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AB8A3C1BF0912600172F34 /* RSASign.swift */; };
 		52AB8A3F1BF0922700172F34 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AB8A3E1BF0922700172F34 /* File.swift */; };
 		52AC4BA41BF08D8F00C0FD62 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AC4BA31BF08D8F00C0FD62 /* AppDelegate.swift */; };
@@ -107,7 +108,8 @@
 
 /* Begin PBXFileReference section */
 		36747A79AAE4675674924E26 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		52AB8A3A1BF0911300172F34 /* AES.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AES.swift; sourceTree = "<group>"; };
+		529842E51C0861050076E97B /* ViewControllerKriptTab.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerKriptTab.swift; sourceTree = "<group>"; };
+		52AB8A3A1BF0911300172F34 /* AESCrypt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AESCrypt.swift; sourceTree = "<group>"; };
 		52AB8A3C1BF0912600172F34 /* RSASign.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSASign.swift; sourceTree = "<group>"; };
 		52AB8A3E1BF0922700172F34 /* File.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		52AC4BA01BF08D8F00C0FD62 /* Crypt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Crypt.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -243,6 +245,7 @@
 				52AC4BA31BF08D8F00C0FD62 /* AppDelegate.swift */,
 				52AC4BA51BF08D8F00C0FD62 /* ViewController.swift */,
 				52AC4BA71BF08D8F00C0FD62 /* Main.storyboard */,
+				529842E51C0861050076E97B /* ViewControllerKriptTab.swift */,
 				52AC4BAA1BF08D8F00C0FD62 /* Assets.xcassets */,
 				52AC4BAC1BF08D8F00C0FD62 /* LaunchScreen.storyboard */,
 				52AC4BAF1BF08D8F00C0FD62 /* Info.plist */,
@@ -273,7 +276,7 @@
 			children = (
 				52AC4BD81BF08DE300C0FD62 /* CryptoModule.h */,
 				52AC4BDA1BF08DE300C0FD62 /* Info.plist */,
-				52AB8A3A1BF0911300172F34 /* AES.swift */,
+				52AB8A3A1BF0911300172F34 /* AESCrypt.swift */,
 				52AB8A3C1BF0912600172F34 /* RSASign.swift */,
 				52C1D3031BF0E34100B685A1 /* Hash.swift */,
 			);
@@ -641,6 +644,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				52AC4BA61BF08D8F00C0FD62 /* ViewController.swift in Sources */,
+				529842E61C0861050076E97B /* ViewControllerKriptTab.swift in Sources */,
 				52AC4BA41BF08D8F00C0FD62 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -665,7 +669,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				52AB8A3B1BF0911300172F34 /* AES.swift in Sources */,
+				52AB8A3B1BF0911300172F34 /* AESCrypt.swift in Sources */,
 				52C1D3041BF0E34100B685A1 /* Hash.swift in Sources */,
 				52AB8A3D1BF0912600172F34 /* RSASign.swift in Sources */,
 			);

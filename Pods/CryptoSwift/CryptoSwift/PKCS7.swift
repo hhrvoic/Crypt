@@ -36,9 +36,11 @@ public struct PKCS7: Padding {
         let lastByte = bytes.last!
         let padding = Int(lastByte) // last byte
         
-        if padding >= 1 { //TODO: need test for that, what about empty padding
-            return Array(bytes[0..<(bytes.count - padding)])
-        }
+//        if padding >= 1 { //TODO: need test for that, what about empty padding
+//            print(bytes)
+//            print(padding)
+//            return Array(bytes[0..<(bytes.count - padding)])
+//        }
         return bytes
     }
 }

@@ -1,25 +1,152 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="sI7-gE-7Rg">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Kriptiranje-->
+        <scene sceneID="zQG-iX-jVv">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController useStoryboardIdentifierAsRestorationIdentifier="YES" id="VMK-Xf-YqO" customClass="ViewControllerKriptTab" customModule="Crypt" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="1Td-xF-eCi"/>
+                        <viewControllerLayoutGuide type="bottom" id="DH5-h8-kAO"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="vs4-zz-5cp">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NpB-iJ-qSi">
+                                <rect key="frame" x="20" y="20" width="560" height="511"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="SEv-sd-uDC">
+                                        <rect key="frame" x="0.0" y="0.0" width="560" height="128"/>
+                                        <animations/>
+                                    </stackView>
+                                </subviews>
+                                <animations/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="SEv-sd-uDC" firstAttribute="top" secondItem="NpB-iJ-qSi" secondAttribute="top" id="2L4-yd-Pr4"/>
+                                    <constraint firstAttribute="bottom" secondItem="SEv-sd-uDC" secondAttribute="bottom" id="9Od-2s-euv"/>
+                                    <constraint firstItem="SEv-sd-uDC" firstAttribute="width" secondItem="NpB-iJ-qSi" secondAttribute="width" id="S5w-U0-56d"/>
+                                    <constraint firstItem="SEv-sd-uDC" firstAttribute="leading" secondItem="NpB-iJ-qSi" secondAttribute="leading" id="dWH-2U-Nyf"/>
+                                    <constraint firstAttribute="trailing" secondItem="SEv-sd-uDC" secondAttribute="trailing" id="ju1-nV-G1i"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="NpB-iJ-qSi" firstAttribute="leading" secondItem="vs4-zz-5cp" secondAttribute="leadingMargin" id="1vp-Ql-j9j"/>
+                            <constraint firstItem="NpB-iJ-qSi" firstAttribute="top" secondItem="1Td-xF-eCi" secondAttribute="bottom" id="CJc-D8-odX"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="NpB-iJ-qSi" secondAttribute="trailing" id="K4b-gV-VgQ"/>
+                            <constraint firstItem="DH5-h8-kAO" firstAttribute="top" secondItem="NpB-iJ-qSi" secondAttribute="bottom" constant="20" id="eLT-I1-XCT"/>
+                        </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Kriptiranje" image="lockerIconTab" selectedImage="lockerIconTab" id="zjD-Nk-PZC"/>
+                    <connections>
+                        <outlet property="scrollView" destination="NpB-iJ-qSi" id="dIl-UG-Hg1"/>
+                        <outlet property="stackView" destination="SEv-sd-uDC" id="fZj-dr-SJF"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Q0W-YU-tHe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1972" y="232"/>
+        </scene>
+        <!--Manipulacija datotekama-->
+        <scene sceneID="ssy-nk-zok">
+            <objects>
+                <viewController id="JL5-BD-NJu" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="s4C-x5-Ttt"/>
+                        <viewControllerLayoutGuide type="bottom" id="WBo-MJ-XDU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3Ai-Xu-tCV">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g9U-fh-oIX">
+                                <rect key="frame" x="20" y="45" width="560" height="511"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="mKb-zH-T5n">
+                                        <rect key="frame" x="0.0" y="0.0" width="560" height="387"/>
+                                        <subviews>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Manipulacija datotekama" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oNL-E3-Xov">
+                                                <rect key="frame" x="0.0" y="0.0" width="560" height="30"/>
+                                                <animations/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Unesite ime datoteke..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cXg-tG-BSM">
+                                                <rect key="frame" x="0.0" y="30" width="560" height="30"/>
+                                                <animations/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="VOL-cg-Rvc">
+                                                <rect key="frame" x="0.0" y="60" width="560" height="327"/>
+                                                <animations/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="20"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                        </subviews>
+                                        <animations/>
+                                    </stackView>
+                                </subviews>
+                                <animations/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="mKb-zH-T5n" secondAttribute="bottom" id="TwP-pO-l1H"/>
+                                    <constraint firstItem="mKb-zH-T5n" firstAttribute="width" secondItem="g9U-fh-oIX" secondAttribute="width" id="UaJ-Td-sye"/>
+                                    <constraint firstItem="mKb-zH-T5n" firstAttribute="leading" secondItem="g9U-fh-oIX" secondAttribute="leading" id="glE-mY-bXC"/>
+                                    <constraint firstAttribute="trailing" secondItem="mKb-zH-T5n" secondAttribute="trailing" id="mkO-e9-WEM"/>
+                                    <constraint firstItem="mKb-zH-T5n" firstAttribute="top" secondItem="g9U-fh-oIX" secondAttribute="top" id="v8l-p1-rXe"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="g9U-fh-oIX" firstAttribute="leading" secondItem="3Ai-Xu-tCV" secondAttribute="leadingMargin" id="994-Sc-d95"/>
+                            <constraint firstItem="g9U-fh-oIX" firstAttribute="top" secondItem="s4C-x5-Ttt" secondAttribute="bottom" constant="25" id="9aX-Yd-rpa"/>
+                            <constraint firstItem="g9U-fh-oIX" firstAttribute="trailing" secondItem="3Ai-Xu-tCV" secondAttribute="trailingMargin" id="c9z-f7-QPs"/>
+                            <constraint firstItem="g9U-fh-oIX" firstAttribute="centerY" secondItem="3Ai-Xu-tCV" secondAttribute="centerY" id="wCL-1z-feA"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Manipulacija datotekama" image="fileIconTab" selectedImage="fileIconTab" id="GXd-G4-IO4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="74U-g6-vlc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1972" y="-429"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="wGq-bb-47u">
+            <objects>
+                <tabBarController id="sI7-gE-7Rg" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="3zl-rF-Kc1">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="JL5-BD-NJu" kind="relationship" relationship="viewControllers" id="usU-qB-jKk"/>
+                        <segue destination="VMK-Xf-YqO" kind="relationship" relationship="viewControllers" id="4Jb-1e-UKD"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MpL-eJ-dqR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1152" y="-98"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="fileIconTab" width="25" height="25"/>
+        <image name="lockerIconTab" width="25" height="25"/>
+    </resources>
 </document>

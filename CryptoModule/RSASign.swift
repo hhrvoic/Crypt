@@ -8,7 +8,7 @@
 //
 import Foundation
 import Heimdall //koristi se za RSA i digitalni potpis
-
+//
 public class RSASign {
     public var heimdallObj: Heimdall?
     public init (){

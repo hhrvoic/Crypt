@@ -39,59 +39,7 @@ class ViewController: UIViewController {
 //            print ("magda")
 //        }
          //stvaranje kljuceva
-          let RSAworker: RSASign = RSASign ()
-          let privateKey = RSAworker.getPrivateKey()
-          let publicKey = RSAworker.getPublicKey()
-          let fileWorker = File()
-          let secretKey = "asdfqweeasdfqweeasdfqweeasdfqwee"
-          let iv = "mamamamamamamama" // lenght == 16
-          fileWorker.writeToFile("Ovo je text u datoteci", filename: "plaintext.txt")
-          fileWorker.writeToFile(privateKey, filename: "privatni_kljuc.txt")
-          fileWorker.writeToFile(publicKey, filename: "javni_kljuc.txt")
-          fileWorker.writeToFile(secretKey, filename: "tajni_kljuc.txt")
-          let plainText = fileWorker.returnFileContents("plaintext.txt")
-          //kriptiranje asimetricno
-       
-          fileWorker.writeToFile(RSAworker.encryptRSA(plainText), filename: "RSAEncryptedText.txt")
-          let rsaEncryptedText = fileWorker.returnFileContents("RSAEncryptedText.txt")
-          let originalText = RSAworker.decryptRSA(rsaEncryptedText)
-          print("RSA encrypted text:\(rsaEncryptedText)")
-          print("original text:\(originalText)")
-          //kriptiranje simetricno 
-            do{
-                let aesEncryptedText = try originalText.aesEncrypt(secretKey, iv: iv)
-                fileWorker.writeToFile(aesEncryptedText, filename: "AESEncryptedText.txt")
-                print("Aes encrypted text:\(aesEncryptedText)")
-            }
-           catch {
-               print ("fail kod kriptiranja")
-           }
-            do{
-                let aesEncryptedTextFromFile = fileWorker.returnFileContents("AESEncryptedText.txt")
-                   let aesDecryptedText = try aesEncryptedTextFromFile.aesDecrypt(secretKey, iv: iv)
-                   print("Aes decrypted text:\(aesDecryptedText)")
-               
-             }
-                catch {
-                    print ("fail kod dekriptiranja")
-                }
-           //sazetak
-          let shaedText = plainText.sha512()
-          fileWorker.writeToFile(shaedText, filename: "shaedText.txt")
-          print("Text in sha512:\(shaedText)")
-          //digitalni potpis
-          let plainTextToVerify = fileWorker.returnFileContents("plaintext.txt")
-          fileWorker.writeToFile(RSAworker.sign(plainTextToVerify), filename: "potpis.txt")
-          let sign = fileWorker.returnFileContents("potpis.txt")
-          let verified  = RSAworker.Verify(plainText,signature:sign)
-        if(verified) {
-            print ("Message integrity and authenticity has been verified")
-        }
-        else {
-            print("Message integrity or authenticity has been compromised")
-        }
-        
-        
+                  
     }
     override func viewDidLoad() {
         super.viewDidLoad()

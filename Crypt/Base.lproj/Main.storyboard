@@ -1,98 +1,252 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="sI7-gE-7Rg">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="CRZ-kx-ZrI">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Kriptiranje-->
-        <scene sceneID="zQG-iX-jVv">
+        <!--CryptWorker-->
+        <scene sceneID="ERM-LS-7pw">
             <objects>
-                <viewController useStoryboardIdentifierAsRestorationIdentifier="YES" id="VMK-Xf-YqO" customClass="ViewControllerKriptTab" customModule="Crypt" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="CryptWorker" id="7oj-he-5Bp" customClass="ViewControllerKriptTab" customModule="Crypt" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="1Td-xF-eCi"/>
-                        <viewControllerLayoutGuide type="bottom" id="DH5-h8-kAO"/>
+                        <viewControllerLayoutGuide type="top" id="0Dz-sR-05U"/>
+                        <viewControllerLayoutGuide type="bottom" id="5lX-3s-BcC"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="vs4-zz-5cp">
+                    <view key="view" contentMode="scaleToFill" id="kcd-YN-7cS">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NpB-iJ-qSi">
-                                <rect key="frame" x="20" y="20" width="560" height="511"/>
-                                <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="SEv-sd-uDC">
-                                        <rect key="frame" x="0.0" y="0.0" width="560" height="128"/>
-                                        <animations/>
-                                    </stackView>
-                                </subviews>
-                                <animations/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstItem="SEv-sd-uDC" firstAttribute="top" secondItem="NpB-iJ-qSi" secondAttribute="top" id="2L4-yd-Pr4"/>
-                                    <constraint firstAttribute="bottom" secondItem="SEv-sd-uDC" secondAttribute="bottom" id="9Od-2s-euv"/>
-                                    <constraint firstItem="SEv-sd-uDC" firstAttribute="width" secondItem="NpB-iJ-qSi" secondAttribute="width" id="S5w-U0-56d"/>
-                                    <constraint firstItem="SEv-sd-uDC" firstAttribute="leading" secondItem="NpB-iJ-qSi" secondAttribute="leading" id="dWH-2U-Nyf"/>
-                                    <constraint firstAttribute="trailing" secondItem="SEv-sd-uDC" secondAttribute="trailing" id="ju1-nV-G1i"/>
-                                </constraints>
-                            </scrollView>
-                        </subviews>
-                        <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="NpB-iJ-qSi" firstAttribute="leading" secondItem="vs4-zz-5cp" secondAttribute="leadingMargin" id="1vp-Ql-j9j"/>
-                            <constraint firstItem="NpB-iJ-qSi" firstAttribute="top" secondItem="1Td-xF-eCi" secondAttribute="bottom" id="CJc-D8-odX"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="NpB-iJ-qSi" secondAttribute="trailing" id="K4b-gV-VgQ"/>
-                            <constraint firstItem="DH5-h8-kAO" firstAttribute="top" secondItem="NpB-iJ-qSi" secondAttribute="bottom" constant="20" id="eLT-I1-XCT"/>
-                        </constraints>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Kriptiranje" image="lockerIconTab" selectedImage="lockerIconTab" id="zjD-Nk-PZC"/>
-                    <connections>
-                        <outlet property="scrollView" destination="NpB-iJ-qSi" id="dIl-UG-Hg1"/>
-                        <outlet property="stackView" destination="SEv-sd-uDC" id="fZj-dr-SJF"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Q0W-YU-tHe" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1972" y="232"/>
-        </scene>
-        <!--Manipulacija datotekama-->
-        <scene sceneID="ssy-nk-zok">
-            <objects>
-                <viewController id="JL5-BD-NJu" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="s4C-x5-Ttt"/>
-                        <viewControllerLayoutGuide type="bottom" id="WBo-MJ-XDU"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="3Ai-Xu-tCV">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g9U-fh-oIX">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b8p-yu-6XS">
                                 <rect key="frame" x="20" y="45" width="560" height="511"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="mKb-zH-T5n">
-                                        <rect key="frame" x="0.0" y="0.0" width="560" height="387"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="WKB-GR-dLG">
+                                        <rect key="frame" x="0.0" y="0.0" width="560" height="1394"/>
                                         <subviews>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Manipulacija datotekama" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oNL-E3-Xov">
-                                                <rect key="frame" x="0.0" y="0.0" width="560" height="30"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kriptiranje" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wSg-7c-XDu">
+                                                <rect key="frame" x="0.0" y="0.0" width="560" height="40"/>
+                                                <animations/>
+                                                <fontDescription key="fontDescription" name="Symbol" family="Symbol" pointSize="40"/>
+                                                <color key="textColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="unesi ime datoteke koju zelis kriptirati...potpisati...etc" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="psb-MK-rFN">
+                                                <rect key="frame" x="0.0" y="40" width="560" height="30"/>
                                                 <animations/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <action selector="copy:" destination="hSu-vY-kTq" eventType="editingDidEnd" id="mMp-5q-cbc"/>
+                                                    <action selector="onNazivDatChange:" destination="7oj-he-5Bp" eventType="editingDidEnd" id="QIM-M4-qpw"/>
+                                                    <action selector="onNazivDatotekeChanged:" destination="b5K-e8-WLD" eventType="editingDidEnd" id="Y7e-ZC-EnL"/>
+                                                </connections>
                                             </textField>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Unesite ime datoteke..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cXg-tG-BSM">
-                                                <rect key="frame" x="0.0" y="30" width="560" height="30"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sadržaj originalne datoteke" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Im8-JO-flh">
+                                                <rect key="frame" x="0.0" y="70" width="560" height="30"/>
                                                 <animations/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
-                                            </textField>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="VOL-cg-Rvc">
-                                                <rect key="frame" x="0.0" y="60" width="560" height="327"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                <color key="textColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Simetrično (de)kriptiran text" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="E3o-gA-Ee7">
+                                                <rect key="frame" x="0.0" y="100" width="560" height="128"/>
                                                 <animations/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="20"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="128" id="4D8-A4-OGk"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Simetrično kriptiranje" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bOo-87-P9M">
+                                                <rect key="frame" x="0.0" y="228" width="560" height="30"/>
+                                                <animations/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                <color key="textColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AES šifrat/dešifrat:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ena-hl-wHS">
+                                                <rect key="frame" x="0.0" y="258" width="560" height="21"/>
+                                                <animations/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AES ključ:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jh9-xA-qeT">
+                                                <rect key="frame" x="0.0" y="279" width="560" height="21"/>
+                                                <animations/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KeE-hF-YAe">
+                                                <rect key="frame" x="0.0" y="300" width="560" height="30"/>
+                                                <animations/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <action selector="OnSecretKeyChange:" destination="7oj-he-5Bp" eventType="editingDidEnd" id="hwN-lU-hsc"/>
+                                                </connections>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kriptiraj/Dekriptiraj" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NZ9-Rk-Dff">
+                                                <rect key="frame" x="0.0" y="330" width="560" height="21"/>
+                                                <animations/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="5dk-7i-egU">
+                                                <rect key="frame" x="0.0" y="351" width="560" height="29"/>
+                                                <animations/>
+                                                <segments>
+                                                    <segment title="Kriptiraj"/>
+                                                    <segment title="Dekriptiraj"/>
+                                                </segments>
+                                                <connections>
+                                                    <action selector="onAesCryptSwtichValueChanged:" destination="7oj-he-5Bp" eventType="valueChanged" id="aHK-mx-l10"/>
+                                                </connections>
+                                            </segmentedControl>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Sadrzaj dat" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="TI7-TR-SNZ">
+                                                <rect key="frame" x="0.0" y="379" width="560" height="128"/>
+                                                <animations/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="128" id="V25-WH-D0C"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Asimetrično kriptiranje" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ali-d1-h9i">
+                                                <rect key="frame" x="0.0" y="507" width="560" height="30"/>
+                                                <animations/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                <color key="textColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RSA privatni ključ:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JEe-Vh-ev8">
+                                                <rect key="frame" x="0.0" y="537" width="560" height="21"/>
+                                                <animations/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Privatni ključ" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="kfa-uz-b4W">
+                                                <rect key="frame" x="0.0" y="558" width="560" height="128"/>
+                                                <animations/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="128" id="7K6-eW-UHZ"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RSA javni ključ:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O8U-rc-KyD">
+                                                <rect key="frame" x="0.0" y="686" width="560" height="21"/>
+                                                <animations/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Javni ključ" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="TKy-tw-uUy">
+                                                <rect key="frame" x="0.0" y="707" width="560" height="128"/>
+                                                <animations/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="128" id="lvT-a9-eEg"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="0t6-2T-U3A">
+                                                <rect key="frame" x="0.0" y="835" width="560" height="29"/>
+                                                <animations/>
+                                                <segments>
+                                                    <segment title="Kriptiraj"/>
+                                                    <segment title="Dekriptirano"/>
+                                                </segments>
+                                                <connections>
+                                                    <action selector="onEnDecryptRSA:" destination="7oj-he-5Bp" eventType="valueChanged" id="d6o-qz-S7V"/>
+                                                </connections>
+                                            </segmentedControl>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RSA šifrat/dešifrat:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yQO-aV-0yz">
+                                                <rect key="frame" x="0.0" y="863" width="560" height="21"/>
+                                                <animations/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Asimetrično (de)kriptiran text" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="YZ8-rF-UOB">
+                                                <rect key="frame" x="0.0" y="884" width="560" height="128"/>
+                                                <animations/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="128" id="u6r-XQ-MZ4"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Digitalni potpis" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QgN-iN-W5r">
+                                                <rect key="frame" x="0.0" y="1012" width="560" height="30"/>
+                                                <animations/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                <color key="textColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UVr-GW-CFl">
+                                                <rect key="frame" x="0.0" y="1042" width="560" height="30"/>
+                                                <animations/>
+                                                <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal" title="Potpiši datoteku">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="onSignBtn:" destination="7oj-he-5Bp" eventType="touchUpInside" id="Ohe-Xl-4ni"/>
+                                                </connections>
+                                            </button>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Asimetrično (de)kriptiran text" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="KdG-oX-3oZ">
+                                                <rect key="frame" x="0.0" y="1072" width="560" height="128"/>
+                                                <animations/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="128" id="xYn-3w-MTB"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eOF-wS-E1f">
+                                                <rect key="frame" x="0.0" y="1200" width="560" height="30"/>
+                                                <animations/>
+                                                <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal" title="Verificiraj datoteku">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="onVerifyBtn:" destination="7oj-he-5Bp" eventType="touchUpInside" id="EfC-vQ-eih"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C2D-oW-oRv">
+                                                <rect key="frame" x="0.0" y="1230" width="560" height="15"/>
+                                                <animations/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hash datoteke" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nlI-3b-LYo">
+                                                <rect key="frame" x="0.0" y="1245" width="560" height="21"/>
+                                                <animations/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Asimetrično (de)kriptiran text" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="0d2-Nz-zw8">
+                                                <rect key="frame" x="0.0" y="1266" width="560" height="128"/>
+                                                <animations/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="128" id="n97-PQ-qlT"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
                                         </subviews>
@@ -100,49 +254,162 @@
                                     </stackView>
                                 </subviews>
                                 <animations/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="mKb-zH-T5n" secondAttribute="bottom" id="TwP-pO-l1H"/>
-                                    <constraint firstItem="mKb-zH-T5n" firstAttribute="width" secondItem="g9U-fh-oIX" secondAttribute="width" id="UaJ-Td-sye"/>
-                                    <constraint firstItem="mKb-zH-T5n" firstAttribute="leading" secondItem="g9U-fh-oIX" secondAttribute="leading" id="glE-mY-bXC"/>
-                                    <constraint firstAttribute="trailing" secondItem="mKb-zH-T5n" secondAttribute="trailing" id="mkO-e9-WEM"/>
-                                    <constraint firstItem="mKb-zH-T5n" firstAttribute="top" secondItem="g9U-fh-oIX" secondAttribute="top" id="v8l-p1-rXe"/>
+                                    <constraint firstItem="WKB-GR-dLG" firstAttribute="top" secondItem="b8p-yu-6XS" secondAttribute="top" id="9AC-Ty-cTv"/>
+                                    <constraint firstAttribute="bottom" secondItem="WKB-GR-dLG" secondAttribute="bottom" id="N03-9K-83j"/>
+                                    <constraint firstItem="WKB-GR-dLG" firstAttribute="width" secondItem="b8p-yu-6XS" secondAttribute="width" id="NFF-1H-8eh"/>
+                                    <constraint firstAttribute="trailing" secondItem="WKB-GR-dLG" secondAttribute="trailing" id="fEJ-bU-cky"/>
+                                    <constraint firstItem="WKB-GR-dLG" firstAttribute="leading" secondItem="b8p-yu-6XS" secondAttribute="leading" id="fuU-sL-mRd"/>
                                 </constraints>
                             </scrollView>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="g9U-fh-oIX" firstAttribute="leading" secondItem="3Ai-Xu-tCV" secondAttribute="leadingMargin" id="994-Sc-d95"/>
-                            <constraint firstItem="g9U-fh-oIX" firstAttribute="top" secondItem="s4C-x5-Ttt" secondAttribute="bottom" constant="25" id="9aX-Yd-rpa"/>
-                            <constraint firstItem="g9U-fh-oIX" firstAttribute="trailing" secondItem="3Ai-Xu-tCV" secondAttribute="trailingMargin" id="c9z-f7-QPs"/>
-                            <constraint firstItem="g9U-fh-oIX" firstAttribute="centerY" secondItem="3Ai-Xu-tCV" secondAttribute="centerY" id="wCL-1z-feA"/>
+                            <constraint firstItem="b8p-yu-6XS" firstAttribute="centerY" secondItem="kcd-YN-7cS" secondAttribute="centerY" id="3o2-Ry-h49"/>
+                            <constraint firstItem="b8p-yu-6XS" firstAttribute="trailing" secondItem="kcd-YN-7cS" secondAttribute="trailingMargin" id="Bhn-E9-1XC"/>
+                            <constraint firstItem="b8p-yu-6XS" firstAttribute="top" secondItem="0Dz-sR-05U" secondAttribute="bottom" constant="25" id="Kbp-Tt-dfH"/>
+                            <constraint firstItem="b8p-yu-6XS" firstAttribute="leading" secondItem="kcd-YN-7cS" secondAttribute="leadingMargin" id="R6R-VS-kGz"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Manipulacija datotekama" image="fileIconTab" selectedImage="fileIconTab" id="GXd-G4-IO4"/>
+                    <tabBarItem key="tabBarItem" title="" image="lockerIconTab" badgeValue="Crypto" selectedImage="lockerIconTab" id="xVf-qm-Vs6"/>
+                    <connections>
+                        <outlet property="aesKey" destination="KeE-hF-YAe" id="Gpc-8v-lJN"/>
+                        <outlet property="hashTxtView" destination="0d2-Nz-zw8" id="e1m-ca-P2h"/>
+                        <outlet property="lblVerified" destination="C2D-oW-oRv" id="hmd-lT-jdl"/>
+                        <outlet property="nazivDat" destination="psb-MK-rFN" id="Az9-n6-z2Z"/>
+                        <outlet property="rsaEncryptedTxt" destination="YZ8-rF-UOB" id="nFK-jc-05Q"/>
+                        <outlet property="rsaPrivateKeyLbl" destination="JEe-Vh-ev8" id="v2B-sX-sLB"/>
+                        <outlet property="rsaPrivateKeyTxtView" destination="kfa-uz-b4W" id="esH-eP-fP5"/>
+                        <outlet property="rsaPublicKeyLbl" destination="O8U-rc-KyD" id="huH-sO-5pK"/>
+                        <outlet property="rsaPublicKeyTxtView" destination="TKy-tw-uUy" id="CnQ-v4-NAd"/>
+                        <outlet property="sadrzajDat" destination="E3o-gA-Ee7" id="H47-SS-Lfe"/>
+                        <outlet property="signTxtView" destination="KdG-oX-3oZ" id="nsi-9f-6Hs"/>
+                        <outlet property="simKriptTxtView" destination="TI7-TR-SNZ" id="nUb-Cs-Tvf"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="74U-g6-vlc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hSu-vY-kTq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1972" y="-429"/>
+            <point key="canvasLocation" x="2293" y="544"/>
+        </scene>
+        <!--FileWorker-->
+        <scene sceneID="UXu-gb-9OA">
+            <objects>
+                <viewController title="FileWorker" id="b5K-e8-WLD" customClass="ViewControllerDatTab" customModule="Crypt" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="96r-1Q-7mn"/>
+                        <viewControllerLayoutGuide type="bottom" id="yYd-Ro-Bg3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="V97-PN-h4y">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tce-Iq-mIP">
+                                <rect key="frame" x="20" y="20" width="560" height="511"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="z11-Bc-PYm">
+                                        <rect key="frame" x="0.0" y="0.0" width="560" height="400"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rad s datotekama" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JCL-W2-LGN">
+                                                <rect key="frame" x="0.0" y="0.0" width="560" height="40"/>
+                                                <animations/>
+                                                <fontDescription key="fontDescription" name="Symbol" family="Symbol" pointSize="40"/>
+                                                <color key="textColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="unesi naziv datoteke..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jte-eJ-FzX">
+                                                <rect key="frame" x="0.0" y="40" width="560" height="30"/>
+                                                <animations/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <action selector="copy:" destination="ugz-Qp-Yky" eventType="editingDidEnd" id="TId-aa-xRZ"/>
+                                                    <action selector="onNazivDatotekeChanged:" destination="b5K-e8-WLD" eventType="editingDidEnd" id="hmR-Gl-xVN"/>
+                                                </connections>
+                                            </textField>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="tXn-q7-CgB">
+                                                <rect key="frame" x="0.0" y="70" width="560" height="300"/>
+                                                <animations/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="300" id="UyX-Ql-3EH"/>
+                                                </constraints>
+                                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vug-ud-MRR">
+                                                <rect key="frame" x="0.0" y="370" width="560" height="30"/>
+                                                <animations/>
+                                                <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal" title="Unesi u 🗃">
+                                                    <color key="titleColor" red="0.96481566057092349" green="0.9201900888040544" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="titleShadowColor" red="1" green="0.33253692888930053" blue="0.42184150520307129" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="onSpremiUDatotekuClicked:" destination="b5K-e8-WLD" eventType="touchUpInside" id="uoX-Rw-laV"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <animations/>
+                                        <constraints>
+                                            <constraint firstItem="tXn-q7-CgB" firstAttribute="top" secondItem="Jte-eJ-FzX" secondAttribute="bottom" constant="100" id="0d2-bM-dcs"/>
+                                        </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="0d2-bM-dcs"/>
+                                            </mask>
+                                        </variation>
+                                    </stackView>
+                                </subviews>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="z11-Bc-PYm" secondAttribute="trailing" id="1B2-FZ-3GD"/>
+                                    <constraint firstAttribute="bottom" secondItem="z11-Bc-PYm" secondAttribute="bottom" id="HTy-EF-AHU"/>
+                                    <constraint firstItem="z11-Bc-PYm" firstAttribute="top" secondItem="Tce-Iq-mIP" secondAttribute="top" id="PuJ-nG-O5U"/>
+                                    <constraint firstItem="z11-Bc-PYm" firstAttribute="leading" secondItem="Tce-Iq-mIP" secondAttribute="leading" id="UF5-iD-8Mu"/>
+                                    <constraint firstItem="z11-Bc-PYm" firstAttribute="width" secondItem="Tce-Iq-mIP" secondAttribute="width" id="p9D-qE-o8l"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Tce-Iq-mIP" firstAttribute="leading" secondItem="V97-PN-h4y" secondAttribute="leadingMargin" id="MEE-ZI-nbp"/>
+                            <constraint firstItem="yYd-Ro-Bg3" firstAttribute="top" secondItem="Tce-Iq-mIP" secondAttribute="bottom" constant="20" id="NTT-Ta-j2h"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Tce-Iq-mIP" secondAttribute="trailing" id="kuf-xQ-jo9"/>
+                            <constraint firstItem="Tce-Iq-mIP" firstAttribute="top" secondItem="96r-1Q-7mn" secondAttribute="bottom" id="uwt-v8-ebI"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" image="fileIconTab" badgeValue="File" selectedImage="fileIconTab" id="c1P-Yk-Xso"/>
+                    <connections>
+                        <outlet property="nazivDat" destination="Jte-eJ-FzX" id="WPd-kL-4h1"/>
+                        <outlet property="sadrzajDat" destination="tXn-q7-CgB" id="LCW-0k-kZR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ugz-Qp-Yky" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2293" y="-117"/>
         </scene>
         <!--Tab Bar Controller-->
-        <scene sceneID="wGq-bb-47u">
+        <scene sceneID="wss-oy-XsU">
             <objects>
-                <tabBarController id="sI7-gE-7Rg" sceneMemberID="viewController">
-                    <tabBar key="tabBar" contentMode="scaleToFill" id="3zl-rF-Kc1">
+                <tabBarController id="CRZ-kx-ZrI" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="rUh-cj-Iad">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <animations/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="selectedImageTintColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </tabBar>
                     <connections>
-                        <segue destination="JL5-BD-NJu" kind="relationship" relationship="viewControllers" id="usU-qB-jKk"/>
-                        <segue destination="VMK-Xf-YqO" kind="relationship" relationship="viewControllers" id="4Jb-1e-UKD"/>
+                        <segue destination="b5K-e8-WLD" kind="relationship" relationship="viewControllers" id="f33-Og-7tM"/>
+                        <segue destination="7oj-he-5Bp" kind="relationship" relationship="viewControllers" id="yMQ-Rj-vJ9"/>
                     </connections>
                 </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="MpL-eJ-dqR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8On-uV-fqe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1152" y="-98"/>
+            <point key="canvasLocation" x="1473" y="214"/>
         </scene>
     </scenes>
     <resources>

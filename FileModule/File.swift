@@ -28,7 +28,7 @@ public class File{
     }
     public func returnFileContents(filename: String)->String{
         let fileDestinationUrl: NSURL = urla.URLByAppendingPathComponent(filename)
-        var fileContent: String?
+        var fileContent: String = ""
         do {
             fileContent = try String(contentsOfURL: fileDestinationUrl, encoding: NSUTF8StringEncoding)
             
@@ -36,7 +36,7 @@ public class File{
             print("error loading from url \(fileDestinationUrl)")
             print(error.localizedDescription)
         }
-        return fileContent! //vraca stringove iz dat ili null
+        return fileContent //vraca stringove iz dat ili null
     }
 }
    

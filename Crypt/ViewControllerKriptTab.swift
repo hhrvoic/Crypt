@@ -151,6 +151,10 @@ class ViewControllerKriptTab: UIViewController,UITextViewDelegate  {
         rsaEncryptedTxt.text = RSAworker.decryptRSA(fileWorker.returnFileContents("RSAEncryptedText.txt"))
     }
     func loadRSAKeysFromFile(){
+        print("velicina kljuca je")
+        var kljuc = fileWorker.returnFileContents("privatni_kljuc.txt")
+        print (kljuc.characters.count)
+  
         rsaPrivateKeyTxtView.text! = fileWorker.returnFileContents("privatni_kljuc.txt")
         rsaPublicKeyTxtView.text! = fileWorker.returnFileContents("javni_kljuc.txt")
     }

@@ -25,7 +25,7 @@ public extension String {
         {
             return result as String
         }
-        else {//vraća nil ako nije dobro
+        else {
             return "Fuljali ste" 
         }
     }
